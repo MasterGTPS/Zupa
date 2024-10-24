@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Zufarya Cahya Mua'fa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="namePrompt" class="modal">
+        <div class="modal-content">
+            <h2>Selamat Datang!</h2>
+            <p>Silakan masukkan nama Anda:</p>
+            <input type="text" id="username" placeholder="Nama Anda">
+            <button id="submitName">Kirim</button>
+        </div>
+    </div>
+
+    <header style="display: none;">
+        <h1>Portofolio Zufarya Cahya Mua'fa</h1>
+        <div id="greetingMessage" style="display: none;"></div>
+        <div id="datetime"></div>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="theme-picker" style="display: none;">
+        <label for="theme-select">Pilih Tema:</label>
+        <select id="theme-select">
+            <option value="theme-blue">Tema Biru</option>
+            <option value="theme-light">Tema Terang</option>
+            <option value="theme-pink">Tema Merah Muda</option>
+            <option value="theme-lavender">Tema Lavender</option>
+            <option value="theme-yellow">Tema Kuning</option>
+        </select>
+    </div>
+    
+    <section id="about" class="container fade-in" style="display: none;">
+        <h2>Tentang Saya</h2>
+        <p>Halo! Nama saya <strong>Zufarya Cahya Mua'fa</strong>, seorang pelajar di <strong>SMP Muhammadiyah 7 Surakarta</strong>. Sebelumnya, saya menempuh pendidikan di <strong>SD Cemara Dua Surakarta</strong>. Sejak kecil, saya memiliki ketertarikan yang mendalam dalam dunia teknologi dan seni.</p>
+        <p>Saya sangat menyukai bermain gitar. Musik adalah cara saya mengekspresikan diri dan menghilangkan stres. Selain itu, saya juga hobi membuat website. Saya belajar banyak tentang HTML, CSS, dan JavaScript, dan sangat antusias menciptakan proyek-proyek baru yang menantang.</p>
+        <p>Kecintaan saya terhadap teknologi tidak hanya terbatas pada pengembangan web. Saya aktif mengikuti perkembangan teknologi terbaru, termasuk aplikasi mobile dan perangkat keras. Saya percaya bahwa teknologi memiliki kekuatan untuk mengubah kehidupan kita menjadi lebih baik.</p>
+        <p>Di luar dunia digital, saya juga senang berpartisipasi dalam berbagai kompetisi di sekolah, baik di bidang akademik maupun non-akademik. Saya berharap dapat mengembangkan keterampilan saya lebih lanjut dan memberikan kontribusi positif bagi masyarakat di sekitar saya.</p>
+        <p>Saya percaya bahwa kombinasi antara teknologi dan seni dapat menciptakan solusi yang inovatif. Dengan semangat tersebut, saya terus berusaha untuk belajar dan tumbuh di bidang yang saya cintai.</p>
+    </section>
+
+    <section id="projects" class="container fade-in" style="display: none;">
+        <h2>Proyek</h2>
+        <div class="project">
+            <h3><i class="fas fa-globe"></i> Website Pribadi</h3>
+            <p>Website ini adalah portofolio pribadi saya yang menunjukkan keterampilan saya dalam HTML, CSS, dan JavaScript. Saya mendesain dan mengembangkan semuanya sendiri, menjadi wadah untuk berbagi informasi tentang kegiatan dan minat saya.</p>
+            <p>Proyek ini juga mencakup blog pribadi di mana saya membagikan pengalaman dan pembelajaran saya di dunia teknologi.</p>
+        </div>
+        <div class="project">
+            <h3><i class="fas fa-laptop-code"></i> Aplikasi Pembelajaran</h3>
+            <p>Saya sedang mengembangkan aplikasi pembelajaran berbasis web untuk membantu teman-teman saya belajar dengan cara yang lebih interaktif dan menyenangkan. Aplikasi ini mencakup berbagai fitur menarik seperti kuis, materi interaktif, dan forum diskusi.</p>
+            <p>Saya berharap aplikasi ini dapat menjadi sumber daya yang berguna bagi para pelajar di sekitar saya.</p>
+        </div>
+        <div class="project">
+            <h3><i class="fas fa-video"></i> Video Tutorial Gitar</h3>
+            <p>Saya membuat serangkaian video tutorial bermain gitar untuk pemula, di mana saya membagikan teknik dan tips bermain yang saya pelajari. Proyek ini menggabungkan kecintaan saya terhadap musik dan teknologi, serta membantu orang lain belajar bermain gitar dengan mudah.</p>
+            <p>Melalui proyek ini, saya juga mengajak teman-teman untuk berbagi pengalaman mereka dalam bermain musik.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container fade-in" style="display: none;">
+        <h2>Kontak</h2>
+        <p>Jika Anda ingin menghubungi saya, silakan isi formulir di bawah ini. Saya akan merespons pesan Anda secepat mungkin!</p>
+        <form id="contactForm">
+            <input type="text" placeholder="Nama" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer style="display: none;">
+        <p>&copy; 2024 Zufarya Cahya Mua'fa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
